@@ -28,7 +28,7 @@
         <ul v-for="(todo,index) in todos" class="list-item">
           <li>
             <span>{{ todo }}</span>
-            <i class="fas fa-trash-alt"></i>
+            <button @click="remove(index)" type="button" name="button" class="trash"><i  class="fas fa-trash-alt"></i></button>
           </li>
         </ul>
       </main>
