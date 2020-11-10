@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="app">
+  <div id="app">
     <div class="todo-app">
 
       <!-- Header -->
@@ -23,19 +23,11 @@
 
       <!-- Main content -->
       <main class="main-content">
-        <input class="text-todo" type="text" placeholder="Nuovo todo">
+        <input class="text-todo" type="text" v-model="message" placeholder="Lista">
         <button class="btn" type="button" name="button">Aggiungi</button>
-        <ul class="list-item">
+        <ul v-for="(todo,index) in todos" class="list-item">
           <li>
-            <span>Fare la spesa</span>
-            <i class="fas fa-trash-alt"></i>
-          </li>
-          <li>
-            <span>Studiare</span>
-            <i class="fas fa-trash-alt"></i>
-          </li>
-          <li>
-            <span>Camminare</span>
+            <span>{{ todo }}</span>
             <i class="fas fa-trash-alt"></i>
           </li>
         </ul>
