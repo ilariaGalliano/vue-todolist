@@ -23,8 +23,8 @@
 
       <!-- Main content -->
       <main class="main-content">
-        <input class="text-todo" type="text" v-model="message" placeholder="Lista">
-        <button class="btn" type="button" name="button">Aggiungi</button>
+        <input class="text-todo" tabindex="0" @keyup.enter="insertElement" type="text" v-model="newTodo" placeholder="Lista">
+        <button @click="insertElement" class="btn" type="button" name="button">Aggiungi</button>
         <ul v-for="(todo,index) in todos" class="list-item">
           <li>
             <span>{{ todo }}</span>

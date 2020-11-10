@@ -8,6 +8,7 @@ const app = new Vue({
   el: '#app',
   data: {
     indexList: 0,
+    newTodo: '',
     message: 'Lista',
     todos:[
       'Fare la spesa',
@@ -19,6 +20,9 @@ const app = new Vue({
     orderList(index){
       this.indexList = index;
     },
+    insertElement(element){
+      this.todos.push(this.newTodo);
+    }
   }
 
 

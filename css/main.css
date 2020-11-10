@@ -6,10 +6,10 @@
 }
 body{
   height: 100vh;
+  background: linear-gradient(0deg, #0077B6 , #00B4D8 30%, #2bd0e5 60%) fixed;
+  background-attachment: fixed;
   font-family: 'Rubik', sans-serif;
-  background: linear-gradient(0deg, #0077B6 , #00B4D8 30%, #2bd0e5 60%) no-repeat;
 }
-
 /* Header */
 .main-header{
   display: flex;
