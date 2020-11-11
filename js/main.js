@@ -1,8 +1,8 @@
-/**
+/***********
  *
  * Todo List
  *
- */
+ ***********/
 
 const app = new Vue({
   el: '#app',
@@ -29,7 +29,12 @@ const app = new Vue({
     remove(index) {
      this.todos.splice(index,1) //num elementi che voglio eliminare
    },
-//scrivere quando cancello tutto che non ci sono più cose da fare
-
-   }
+   //scrivere quando cancello tutto che non ci sono più cose da fare
+    // lastElement() {
+    //   if (this.todos.length == '') {
+    //     alert('ciao');
+    //     console.log('fine');
+    //   }
+    // }
+  }
 })

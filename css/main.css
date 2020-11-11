@@ -79,9 +79,8 @@ body{
   border-bottom: 1px solid rgba(255,255,250, 0.2);
   text-transform: capitalize;
 }
-
 /* Mobile da 320px a 500px */
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px)and (max-width: 500px){
   /* Img */
   .main-header img{
     max-width: 200px;
@@ -109,7 +108,7 @@ body{
 }
 
 /* Tablet */
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) and (max-width: 1200px) {
   /* Img */
   .main-header img{
     max-width: 400px;
@@ -130,7 +129,7 @@ body{
     height: 30px;
     margin-bottom: 20px;
   }
-  
+
   /* List todos */
   .list-item{
     width: 400px;
