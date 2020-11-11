@@ -9,6 +9,7 @@ const app = new Vue({
   data: {
     indexList: 0,
     newTodo: '',
+    finalText:'Complimenti, non ci sono più todos!'.toUpperCase(),
     message: 'Lista',
     todos:[
       'Fare la spesa',
@@ -28,13 +29,6 @@ const app = new Vue({
     },
     remove(index) {
      this.todos.splice(index,1) //num elementi che voglio eliminare
-   },
-   //scrivere quando cancello tutto che non ci sono più cose da fare
-    // lastElement() {
-    //   if (this.todos.length == '') {
-    //     alert('ciao');
-    //     console.log('fine');
-    //   }
-    // }
+   }
   }
 })

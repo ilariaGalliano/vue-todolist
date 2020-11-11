@@ -107,7 +107,7 @@ body{
   }
 }
 
-/* Tablet */
+/* Tablet da 500px a 1200px */
 @media screen and (min-width: 500px) and (max-width: 1200px) {
   /* Img */
   .main-header img{

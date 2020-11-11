@@ -26,13 +26,16 @@
         <input class="text-todo" @keyup.enter="insertElement" type="text" v-model="newTodo" placeholder="Lista">
         <button @click="insertElement" class="btn" type="button" name="button">Aggiungi</button>
         <ul class="list-item">
-          <li v-for="(todo,index) in todos">
+          <li v-if="todos.length == 0">
+            <span>{{ finalText }}</span>
+          </li>
+          <li v-for="(todo,index) in todos" v-else>
             <span>{{ todo }}</span>
             <i @click="remove(index)" class="fas fa-trash-alt"></i>
           </li>
         </ul>
       </main>
-
+      
     </div>
   </div>
 
