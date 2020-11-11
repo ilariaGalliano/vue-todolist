@@ -23,12 +23,12 @@
 
       <!-- Main content -->
       <main class="main-content">
-        <input class="text-todo" tabindex="0" @keyup.enter="insertElement" type="text" v-model="newTodo" placeholder="Lista">
+        <input class="text-todo" @keyup.enter="insertElement" type="text" v-model="newTodo" placeholder="Lista">
         <button @click="insertElement" class="btn" type="button" name="button">Aggiungi</button>
-        <ul v-for="(todo,index) in todos" class="list-item">
-          <li>
+        <ul class="list-item">
+          <li v-for="(todo,index) in todos">
             <span>{{ todo }}</span>
-            <button @click="remove(index)" type="button" name="button" class="trash"><i  class="fas fa-trash-alt"></i></button>
+            <i @click="remove(index)" class="fas fa-trash-alt"></i>
           </li>
         </ul>
       </main>

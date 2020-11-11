@@ -14,19 +14,22 @@ const app = new Vue({
       'Fare la spesa',
       'Camminare',
       'Studiare',
-    ]
+    ],
   },
   methods:{
     orderList(index){
       this.indexList = index;
     },
     insertElement(element){
-      this.todos.push(this.newTodo);
-      this.newTodo = "";
+      if (this.newTodo.trim() !== '') {
+          this.todos.push(this.newTodo);
+          this.newTodo = "";
+      }
     },
     remove(index) {
      this.todos.splice(index,1) //num elementi che voglio eliminare
-   }
-    //scrivere quando cancello tutto che non ci sono più cose da fare
+   },
+//scrivere quando cancello tutto che non ci sono più cose da fare
+
    }
 })
