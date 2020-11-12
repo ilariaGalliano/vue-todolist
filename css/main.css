@@ -9,6 +9,7 @@ body{
   background: linear-gradient(0deg, #0077B6 , #00B4D8 30%, #2bd0e5 60%) fixed;
   font-family: 'Rubik', sans-serif;
 }
+
 /* Header */
 .main-header{
   display: flex;
@@ -77,8 +78,11 @@ body{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255,255,250, 0.2);
-  text-transform: capitalize;
 }
+.main-content .list-item span::first-letter{
+  text-transform: uppercase;
+}
+
 /* Mobile da 320px a 500px */
 @media screen and (min-width: 320px)and (max-width: 500px){
   /* Img */
